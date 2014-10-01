@@ -27,7 +27,16 @@ Version: 2.4
     font-family: RobotoCondensed;
     src: url(fonts/RobotoCondensed-Regular.ttf);
 }
-
+@font-face {
+        font-family: "Oswald VNF";
+        src: url('fonts/175933838-oswald-vnf-regular.eot');
+        src: url('fonts/175933838-oswald-vnf-regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/175933838-oswald-vnf-regular.svg#Oswald VNF') format('svg'),
+        url('fonts/175933838-oswald-vnf-regular.woff') format('woff'),
+        url('fonts/175933838-oswald-vnf-regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
 @font-face {
         font-family: "UTM Bebas";
         src: url('fonts/659515381-UTM-Bebas.eot');
@@ -1649,11 +1658,12 @@ border: 1px solid #cfcdcd;
 
 }
 #feat-posts .post .post-right h3 {
-	font-family: "UTM Bebas";
+	font-family: "Oswald VNF";
 	font-size: 20px;
 	border-bottom: 1px solid #cfcdcd;
 	padding-bottom: 10px;
 	margin-bottom: 10px;
+	text-transform: none;
 }
 #feat-posts .post .post-right .entry-meta {
 	font-family: "MyriadProSemibold";
@@ -2192,8 +2202,9 @@ margin-right: 6px;
 	margin-bottom: 0;
 	padding: 0;
 	border: 0;
-	font-family: "UTM Bebas";
+	font-family: "Oswald VNF";
 	line-height: 22px;
+	text-transform: none;
 }
 
 .widget_posts .item-post{
