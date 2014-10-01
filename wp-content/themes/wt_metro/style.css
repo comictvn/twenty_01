@@ -2197,14 +2197,16 @@ margin-right: 6px;
 }
 
 /*-- recent posts text --*/
-.widget_posts .item-post h3{
+.widget_posts .item-post h3 {
 	background: none;
 	margin-bottom: 0;
 	padding: 0;
 	border: 0;
 	font-family: "Oswald VNF";
-	line-height: 22px;
+	/* line-height: 16px; */
 	text-transform: none;
+	line-height: 24px;
+	font-size: 16px;
 }
 
 .widget_posts .item-post{
