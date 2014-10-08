@@ -1,6 +1,7 @@
 jQuery(document).ready(function() {
 		jQuery("#slideshow1 > div:gt(0)").hide();
-		var slide = setInterval(function() { 
+	function start() {
+		slide = setInterval(function() { 
 		  jQuery('#slideshow1 > div:first')
 		    .fadeOut(1000)
 		    .next()
@@ -8,8 +9,13 @@ jQuery(document).ready(function() {
 		    .end()
 		    .appendTo('#slideshow1');
 		},  6000);
-	jQuery('#slideshow1').mouseleave(function() {
+	} start();
 		
+	jQuery('#slideshow1').mouseleave(function() {
+		start();
+	});
+	jQuery('#slideshow1').mouseenter(function() {
+		clearInterval(slide);
 	})
 
 	jQuery('#main-menu .menu').mobileMenu({
