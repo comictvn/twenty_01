@@ -1,14 +1,17 @@
 jQuery(document).ready(function() {
 		jQuery("#slideshow1 > div:gt(0)").hide();
-		setInterval(function() { 
+		var slide = setInterval(function() { 
 		  jQuery('#slideshow1 > div:first')
-		    .fadeOut(1000)
+		    .fadeOut(5000)
 		    .next()
-		    .fadeIn(1000)
+		    .fadeIn(5000)
 		    .end()
 		    .appendTo('#slideshow1');
 		},  3000);
-	
+	jQuery('#slideshow1').mouseleave(function() {
+		
+	})
+
 	jQuery('#main-menu .menu').mobileMenu({
 			defaultText: 'Navigate to...',					//default text for select menu
 			className: 'select-menu',						//class name
