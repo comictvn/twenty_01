@@ -2,12 +2,12 @@ jQuery(document).ready(function() {
 		jQuery("#slideshow1 > div:gt(0)").hide();
 		var slide = setInterval(function() { 
 		  jQuery('#slideshow1 > div:first')
-		    .fadeOut(5000)
+		    .fadeOut(1000)
 		    .next()
-		    .fadeIn(5000)
+		    .fadeIn(1000)
 		    .end()
 		    .appendTo('#slideshow1');
-		},  3000);
+		},  6000);
 	jQuery('#slideshow1').mouseleave(function() {
 		
 	})
