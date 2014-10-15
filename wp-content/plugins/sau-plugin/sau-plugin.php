@@ -66,9 +66,9 @@ class WPTutsCRM {
         ),
          
         // Frontend
-        'has_archive'        => false,
+        'has_archive'        => true,
         'public'             => true,
-        'publicly_queryable' => false,
+        'publicly_queryable' => true,
          
         // Admin
         'capability_type' => 'post',
