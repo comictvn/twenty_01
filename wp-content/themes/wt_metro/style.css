@@ -1602,6 +1602,8 @@ ul.flex-direction-nav {
 #content #blog_detail {
 	border: 1px solid #cfcdcd !important;
 	padding: 20px !important;
+	font-size: 16px;
+		color: #252525;
 }
 #content #blog_detail h1 {
 font-family: "UTM Bebas";

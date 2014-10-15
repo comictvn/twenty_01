@@ -40,7 +40,6 @@ class WPTutsCRM {
 	     
 	}	
    function add_table_columns( $columns ) {
- 
 	    
 	    return $columns;
      
@@ -53,7 +52,7 @@ class WPTutsCRM {
             'name'               => _x( 'Notice', 'post type general name', 'tuts-crm' ),
             'singular_name'      => _x( 'Notice', 'post type singular name', 'tuts-crm' ),
             'menu_name'          => _x( 'Notices', 'admin menu', 'tuts-crm' ),
-            'name_admin_bar'     => _x( 'Product', 'add new on admin bar', 'tuts-crm' ),
+            'name_admin_bar'     => _x( 'Notice', 'add new on admin bar', 'tuts-crm' ),
             'add_new'            => _x( 'Add New', 'notice', 'tuts-crm' ),
             'add_new_item'       => __( 'Add New Notice', 'tuts-crm' ),
             'new_item'           => __( 'New Notice', 'tuts-crm' ),
@@ -68,7 +67,7 @@ class WPTutsCRM {
          
         // Frontend
         'has_archive'        => false,
-        'public'             => false,
+        'public'             => true,
         'publicly_queryable' => false,
          
         // Admin
